@@ -1,5 +1,5 @@
 # Netflix-UI-clone
 
-This a UI Clone for Netflix.in
-Home Page and Sign up page
-Html and CSS based
+This a Responsive UI Clone Of
+Contains Home Page and Sign up page
+Based on HTML and CSS
