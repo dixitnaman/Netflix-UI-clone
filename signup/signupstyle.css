@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("images/hero-img.jpg");
+    background-position: center center;
+    background-size: max(1990px, 100vw);
+    background-repeat: no-repeat;
+    height: 1100px;
+    position: relative;
+}
+
+.main .box {
+    height: 1100px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 75.5vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+.form-wrapper {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    padding: 60px;
+    width: 430px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
+    transform: translate(-50%, -50%);
+}
+
+.form-wrapper>h2 {
+    font-family: Martel Sans, sans-serif;
+    font-weight: 900;
+    /* font-family: 'Poppins', sans-serif;
+    font-weight: bolder; */
+    font-size: 2rem;
+}
+
+.form-wrapper form {
+    margin: 25px 0 25px;
+}
+
+form .form-control {
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+
+.form-control input {
+    min-width: 250px;
+    height: 105%;
+    width: 100%;
+    padding: 0 18px;
+    padding-top: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(233 230 230 / 21%);
+    pad: 0 20px;
+    font-size: 18px;
+}
+
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.1s ease-in-out;
+}
+
+.form-control input:is(:focus, :valid)~label {
+    font-size: 0.7rem;
+    transform: translateY(-135%);
+
+}
+
+.btn button {
+    min-width: 250px;
+    cursor: pointer;
+    padding: 9px 16px;
+    border: none;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn button:hover {
+    background: rgb(193, 17, 25);
+
+}
+
+div .btn {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+div .btn a {
+    text-decoration: none;
+    color: white;
+    font-family: Martel Sans;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+div p {
+    font-family: Poppins;
+    font-weight: 300;
+    color: darkgray;
+}
+
+div .btn .grey {
+    background: rgba(128, 128, 128, 0.3);
+}
+
+div .btn .grey:hover {
+    background-color: rgba(143, 143, 143, 0.2);
+}
+
+.form-help .remember-me {
+    font-weight: 300;
+    font-size: 0.94rem;
+
+}
+
+.remember-me input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    margin-right: 9px;
+    cursor: pointer;
+
+}
+
+
+.bottom {
+    width: 85%;
+}
+
+.bottom>p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.bottom p>a {
+    text-decoration: none;
+    color: white;
+    /* font-family: poppins; */
+    font-family: Martel Sans;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.bottom small {
+    color: rgb(136, 136, 136);
+    font-size: 0.75rem;
+    line-height: 2px;
+}
+
+.bottom small>a {
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(50, 146, 255);
+}
+
+
+footer {
+    height: 300px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    background-color: black;
+    padding: 35px 120px;
+    color: white;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+
+.questions {
+    margin: 10px;
+}
+
+.footer a {
+    margin: 10px;
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    margin-bottom: 28px;
+}
+
+.footer-item {
+    text-decoration: none;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-btn {
+    padding: 4px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(233 230 230 / 21%);
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+.language {
+    margin-left: 8px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.langbtn {
+    padding: 4px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(233 230 230 / 21%);
+    cursor: pointer;
+}
+
+.selection {
+    display: inline;
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    padding: 0px 40px;
+    padding-right: 36px;
+    font-family: "Noto Sans", sans-serif;
+    height: 35px;
+    appearance: none;
+}
+
+.translate {
+    z-index: -1;
+    top: 2px;
+    margin-left: 13px;
+    position: absolute;
+}
+
+.dropicons {
+    z-index: -1;
+    margin-left: 6px;
+    left: 90px;
+    margin-top: 5px;
+    position: absolute;
+    position: absolute;
+}
+
+@media screen and (max-width: 730px) {
+    footer {
+        background: black;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+
+    }
+
+    .main .box {
+        /* width: 100%; */
+        opacity: 1;
+        background-color: black;
+    }
+
+    nav,
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        top: 43%;
+    }
+
+    .form-wrapper form {
+        margin: 25px 0 40px;
+    }
+    .form-wrapper{
+        top: 35%;
+    }
+    .langbtn {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: white;
+
+    }
+}
