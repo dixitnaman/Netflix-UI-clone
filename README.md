@@ -1,5 +1,3 @@
 # Netflix-UI-clone
 
-This a Responsive UI Clone Of
-Contains Home Page and Sign up page
-Based on HTML and CSS
+This repository contains the code for building a Netflix-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a starting point for creating similar interfaces or learning web development techniques.
